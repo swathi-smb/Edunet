@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { API_PATH } from '../path/apiPath';
+import { Link } from 'react-router-dom';
 
 function SignUp() {
   const [name, setName] = useState('');
@@ -92,7 +93,7 @@ function SignUp() {
 
           <p className="mt-4 text-center text-gray-600"> 
             {isSubmitting && <span>Submitting...</span>}
-            Already have an account? <a href="/login" className="text-[#f7b81b] hover:underline">Login</a>
+            Already have an account? <Link to="/login" className="text-[#f7b81b] hover:underline">Login</Link>
           </p>
         </div>
       </main>
