@@ -94,7 +94,7 @@ function Restaurant() {
 
             if (response.ok) {
                 setDishes(dishes.filter(dish => dish._id !== id));
-                alert("Dish deleted successfully!");
+                // alert("Dish deleted successfully!");
             } else {
                 alert("Failed to delete dish.");
             }

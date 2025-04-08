@@ -46,7 +46,7 @@ function Collection() {
             className="bg-white shadow-lg rounded-xl p-4 transform transition duration-300 hover:scale-105 hover:shadow-2xl animate-fade-in-up"
           >
             <img
-              src={`${API_PATH}/${dish.image?.replace(/\\/g, "/") || 'default-dish.jpg'}`}
+              src={dish.image?.replace(/\\/g, "/") || 'default-dish.jpg'}
               alt={dish.name}
               className="w-full h-48 object-cover rounded-lg mb-3"
             />
