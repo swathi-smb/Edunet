@@ -14,7 +14,7 @@ function Dashboard() {
 console.log("User Token",token);
     const fetchRestaurants = async () => {
       try {
-        const response = await fetch(`${API_PATH}/restaurants/getresturants`, {
+        const response = await fetch(`${API_PATH}/api/restaurants/getresturants`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
