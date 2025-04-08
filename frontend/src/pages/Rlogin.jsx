@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { API_PATH } from '../path/apiPath';
+import { Link } from "react-router-dom";
 
 function Rlogin() {
     const [email, setEmail] = useState("");
@@ -71,7 +72,7 @@ function Rlogin() {
                             Login
                         </button>
                         <p className="mt-4 text-center text-gray-600">
-                            Don't have an account? <a href="/Rsignup" className="text-[#f7b81b] hover:underline">Sign Up</a>
+                            Don't have an account? <Link to="/Rsignup" className="text-[#f7b81b] hover:underline">Sign Up</Link>
                         </p>
                     </form>
                 </div>
