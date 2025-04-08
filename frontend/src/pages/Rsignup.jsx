@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { API_PATH } from '../path/apiPath';
+import { Link } from 'react-router-dom';
 
 function RSignup() {
   const [restaurant_name, setName] = useState("");
@@ -121,7 +122,7 @@ function RSignup() {
             {/* Login Redirect */}
             <p className="text-center mt-3 text-gray-700">
               Already have an account? 
-              <a href="/Rlogin" className="text-blue-500 hover:underline ml-1">Login</a>
+              <Link to="/Rlogin" className="text-blue-500 hover:underline ml-1">Login</Link>
             </p>
           </div>
         </div>

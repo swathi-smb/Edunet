@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'; // For redirection
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { API_PATH } from '../path/apiPath';
-
+import { Link } from 'react-router-dom';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -91,9 +91,9 @@ function Login() {
           </form>
           <p className="mt-4 text-center text-gray-600">
             Don't have an account?{' '}
-            <a href="/signup" className="text-[#f7b81b] hover:underline">
+            <Link to="/signup" className="text-[#f7b81b] hover:underline">
               Sign Up
-            </a>
+            </Link>
           </p>
         </div>
       </main>
