@@ -10,6 +10,9 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+  server: {
+    historyApiFallback: true, // Enables fallback to index.html for SPA routing
+  },
   extend: {
     animation: {
       'fade-in': 'fadeIn 0.5s ease-out',
