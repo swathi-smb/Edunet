@@ -175,7 +175,7 @@ function Restaurant() {
                         >
                             <div className="w-full h-48 rounded-xl overflow-hidden mb-4">
                                 <img
-                                    src={dish.image}
+                                    src={`${dish.image}`}
                                     alt={dish.name}
                                     className="w-full h-full object-cover transition duration-300 hover:scale-105"
                                 />
